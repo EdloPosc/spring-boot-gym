@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+
+            <form action="/add" method="post" th:object="${gyoModel}">
+                            <label for="message-text" >Adı:</label>
+                            <textarea name="adi" th:field="*{adi}"></textarea>
+                            <label for="message-text">Soyadi:</label>
+                            <textarea name="soyadi" th:field="*{soyadi}"></textarea>
+                            <label for="message-text">Telefon:</label>
+                            <textarea name="telefon" id="message-text" th:field="*{telefon}"></textarea>
+                            <button id="userFormButton" type="submit">Kaydet</button>
+            </form>
+</body>
+</html>
